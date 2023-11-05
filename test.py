@@ -120,3 +120,10 @@ if __name__ == "__main__":
     main(args.text_path,args.model_path,args.output_path)
 
 #main("dataset0.json.gz","xgbmodel1.json")
+#to use it in aws, remove python 3.8, install python 3.11, install 3.11 pip, install packages xgboost==2.0.0
+#scikit-learn==1.2.2
+#numpy==1.24.3
+#pandas==2.0.3
+#then type
+#python3.11 test.py --text_path DATASETFILENAME --model_path MODELFILENAME --output_path OUTPUTFILENAME
+
