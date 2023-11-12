@@ -12,7 +12,7 @@ In our EDA.ipynb file, we did exploratory data analysis on it to learn more abou
 ## System requirements
 For our test data, we will be using dataset2 given. We would require a medium instance on AWS and python>=3.8 to run the code.
 
-For larger datasets, a larger AWS instance will be required as the memory needed will increase. We recommend using XL and above to run the code if you are to use the script on a bigger dataset.
+For larger datasets, a larger AWS instance will be required as the memory needed will increase. We recommend using XL and above to run the script if you are to use the script on a bigger dataset.
 
 The packages required to run the script are listed in the requirements.txt
 
