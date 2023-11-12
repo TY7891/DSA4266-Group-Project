@@ -1,14 +1,30 @@
 ## Genomics Project: Prediction of m6A RNA modifications from direct RNA-Seq data
 In this project, we developed a machine learning method to identify m6A modification from direct RNA-Seq data.
 
+The purpose of our script is to predict m6A modification by training a model on a labelled dataset with their gene ID and labels depicting whether m6A modification is present. 
+
+In our EDA.ipynb file, we did exploratory data analysis on it to learn more about the dataset.
 
 
 
 
 
+## System requirements
+For our test data, we will be using dataset2 given. We would require a medium instance on AWS and python>=3.8 to run the code.
 
+For larger datasets, a larger AWS instance will be required as the memory needed will increase. We recommend using XL and above to run the code if you are to use the script on a bigger dataset.
 
+The packages required to run the script are listed in the requirements.txt
 
+## Interpretation of output
+The output will be the same as the intermediate and final submission, where the file will be in csv format and separated by ",". 
+
+The transcript ID, transcript position and score will be recorded in the csv file, where the score is a value between 0 and 1. It represents the probability that there is a m6A modification at that transcript ID and position.
+
+## Arguments passed to the script
+The arguments passed onto the script is the input name and the output name. The script takes in a .gz file and a model file, where the model file will be used to predict m6A modification on the .gz file. 
+
+It will then output a csv file with the above description, named after the user's choice.
 
 ## Running the model on AWS
 First, we will have to check the python version to make sure that it is at least 3.8.
@@ -30,10 +46,14 @@ Install the required packages for the script via pip.
 ```
 python3.8 -m pip install -r requirements.txt
 ```
-Run the script with this command.
+Run the script with this command. 
 ```
 python3.8 script.py --text_path dataset2.json.gz --model_path final_model.json --output_path dataset2.csv
 ```
+The script takes in a .gz file and the model file as input, and outputs a csv file that shows the transcript id, transcript position and score, separated by ",".
+
+
+
 ## Installation of python3.8
 If it is not at least python 3.8, you can install python 3.8 and above with the following code.
 
