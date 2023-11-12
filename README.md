@@ -3,19 +3,13 @@ In this project, we developed a machine learning method to identify m6A modifica
 
 The purpose of our script is to predict m6A modification by training a model on a labelled dataset with their gene ID and labels depicting whether m6A modification is present. 
 
-In EDA.ipynb file, we did exploratory data analysis on it to learn more about the dataset.
+In EDA.ipynb file and prelimcode.ipynb, we did exploratory data analysis on it to learn more about the dataset and discovered that there is data imbalance and preliminarily tested if undersampling or oversampling will help to solve the issue.
 
 In baseline models.ipynb, we implemented a baseline model with logistic regression and compared it with our intermediate XGBoost model.
 
-
-
-In prelimcode.ipynb, we first discovered that there is data imbalance and preliminarily tested if undersampling or oversampling will help to solve the issue
-
 In resampling.ipynb, we tested the various sampling methods and discovered that Tomek links worked the best amongst the other sampling methods.
 
-in models v2.ipynb, we tested the models again with hyperparameter tuning before deciding that XGBoost will remain as our selected model.
-
-In models.ipynb, we tested a variety of models before deciding on using XGBoost as our model.
+In models.ipynb and models v2.ipynb, we tested a variety of models with and without hyperparameter tuning before deciding on using XGBoost as our model.
 
 In intermediate model.ipynb, we processed the data with our preprocessing steps and tested the model with different combinations of features, which led to the 2 model that we used for the intermediate ranking submission.
 
