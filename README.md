@@ -5,7 +5,7 @@ The purpose of our script is to predict m6A modification by training a model on 
 
 In EDA.ipynb file and prelimcode.ipynb, we did exploratory data analysis on it to learn more about the dataset and discovered that there is data imbalance and preliminarily tested if undersampling or oversampling will help to solve the issue.
 
-In baseline models.ipynb, we implemented a baseline model with logistic regression and compared it with our intermediate XGBoost model.
+In baseline models.ipynb, we implemented a baseline model with logistic regression and compared it with a baseline XGBoost model.
 
 In resampling.ipynb, we tested the various sampling methods and discovered that Tomek links worked the best amongst the other sampling methods.
 
