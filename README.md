@@ -71,6 +71,6 @@ Download and install python3.8 including pip.
 sudo add-apt-repository ppa:deadsnakes/ppa #download python3.8
 sudo apt install python3.8
 sudo apt install python3.8-distutils
-curl -sS https://bootstrap.pypa.io/get-pip.py | python3.8 #get bootstrap 
+curl -sS https://bootstrap.pypa.io/get-pip.py | python3.8 
 ```
 
