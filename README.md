@@ -17,7 +17,7 @@ For larger datasets, a larger AWS instance will be required as the memory needed
 The packages required to run the script are listed in the requirements.txt
 
 ## Interpretation of output
-The output will be the same as the intermediate and final submission, where the file will be in csv format and separated by ",". 
+The output will be the same as the intermediate and final ranking submission, where the file will be in csv format and separated by ",". 
 
 The transcript ID, transcript position and score will be recorded in the csv file, where the score is a value between 0 and 1. It represents the probability that there is a m6A modification at that transcript ID and position.
 
